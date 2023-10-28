@@ -10,7 +10,7 @@ const Registration = () => {
     return (
         <div className='authorisation'>
             <div className="authorisation__header">Регистрация</div>
-            <Input value={login} setValue={setLogin} type="text" placeholder="Введите login..."/>
+            <Input value={login} setValue={setLogin} type="text" placeholder="Введите логин..."/>
             <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..."/>
             <button className="authorisation__btn" onClick={() => registration(login, password)}>Зарегестрироваться</button>
         </div>

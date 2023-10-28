@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
-import Registration from "./registration/Registration";
+import Registration from "./authorization/Registration";
+import Login from "./authorization/Login";
 import { useSelector } from "react-redux";
 
 function App() {

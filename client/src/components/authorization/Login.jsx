@@ -12,7 +12,7 @@ const Login = () => {
     return (
         <div className='authorisation'>
             <div className="authorisation__header">Авторизация</div>
-            <Input value={login} setValue={setLogin} type="text" placeholder="Введите login..."/>
+            <Input value={userLogin} setValue={setUserLogin} type="text" placeholder="Введите логин..."/>
             <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..."/>
             <button className="authorisation__btn" onClick={() => dispatch(login(userLogin, password))}>Войти</button>
         </div>

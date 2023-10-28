@@ -1,4 +1,6 @@
 import axios from 'axios';
+import {setUser} from '../../reducers/userReducer';
+
 
 export const registration = async (login, password) => {
     try {
