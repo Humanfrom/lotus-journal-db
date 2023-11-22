@@ -17,7 +17,7 @@ export const registration = async (login, password) => {
 }
 
 
-export const login = async (login, password) => {
+export const login = (login, password) => {
     return async dispatch => {
         try {
             const response = await axios.post('http://localhost:5000/api/auth/login', 
@@ -29,7 +29,7 @@ export const login = async (login, password) => {
             localStorage.setItem('token', response.data.token);
             console.log('response', response)
         } catch (e) {
-            alert(e);
+            console.log(e);
         }
     }
-}
+} 

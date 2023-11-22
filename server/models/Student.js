@@ -1,6 +1,7 @@
 const {Schema, model, trusted} = require('mongoose');
 
 const Student = new Schema({
+    hash: {type: String, requiried: true},
     first_name: {type: String, requiried: true},
     last_name: {type: String, requiried: true},
     middle_name: {type: String},
